@@ -1,4 +1,4 @@
-from stats import text_count
+from stats import text_count, character_count
 
 filepath = "./books/frankenstein.txt"
 
@@ -12,8 +12,9 @@ def get_book_text(filepath):
 def main():
     book = get_book_text(filepath)
     count = text_count(book)
+    characters = character_count(book)
     print(f"Found {count} total words")
+    print(characters)
 
 
 main()
-
